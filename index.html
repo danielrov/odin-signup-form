@@ -7,6 +7,36 @@
     <title>Signup Form</title>
 </head>
 <body>
-    
+    <div class="welcoming">
+        <h1>hola.buzz</h1>
+        <img src="./resources/form-image.png" alt="Welcoming Image">
+    </div>
+    <div class="form-container">
+        <h2>Crea tu cuenta gratis</h2>
+        <form method="get" action="">
+            <div class="form-section">
+                <label for="name">Nombre*</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-section">
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-section">
+                <label for="tel">Teléfono</label>
+                <input type="tel" id="tel" name="tel">
+            </div>
+            <div class="form-section">
+                <label for="pswd">Contraseña*</label>
+                <input type="password" id="pswd" name="pswd" required>
+            </div>
+            <div class="form-section">
+                <label for="pswd-confirm">Confirmar contraseña*</label>
+                <input type="password" id="pswd-confirm" name="pswd-confirm" required>
+            </div>
+            <button class="send-button">Crear cuenta</button>
+        </form>
+        <p>¿Ya tienes una cuenta? <a href="https://hola.buzz/login/access" class="login">Inicia sesión</a></p>
+    </div>
 </body>
 </html>

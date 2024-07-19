@@ -1,0 +1,137 @@
+/* CSS Reset */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  a:link { 
+    text-decoration: none; 
+  } 
+  a:visited { 
+    text-decoration: none; 
+  } 
+  a:hover { 
+    text-decoration: none; 
+  } 
+  a:active { 
+    text-decoration: none; 
+  }
+
+  /* CSS Reset */
+
+  @font-face {
+    font-family: logo-font;
+    src: url(./resources/Now-Bold.otf);
+  }
+
+  body {
+    display: flex;
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+
+  .welcoming {
+    background-color: #3675f5;
+    height: 100vh;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    padding: 64px;
+  }
+
+  .welcoming h1 {
+    color: white;
+    font-family: logo-font;
+  }
+
+  .form-container {
+    background-color: #F5F5F0;
+    height: 100vh;
+    width: 65%;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  form {
+    padding-left: 16px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"] {
+    width: 300px;
+    height: 2rem;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px;
+  }
+
+  .form-section {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .send-button {
+    padding: 8px 48px;
+    border-radius: 8px;
+    background-color: #3675f5;
+    color: white;
+    border: 0;
+    font-weight: bold;
+    margin-top: 16px;
+    border: 1px solid #f5f5f0;
+  }
+
+  .send-button:hover {
+    cursor: pointer;
+    border: 1px solid #3675f5;
+  }
+
+  .login {
+    color: #3675f5;
+  }
+
+  .login:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  input[type="text"]:user-invalid,
+  input[type="email"]:user-invalid,
+  input[type="password"]:user-invalid,
+  input[type="tel"]:user-invalid {
+    width: 300px;
+    height: 2rem;
+    border: 1px solid red;
+    border-radius: 4px;
+  }
+
+  .form-container p {
+    padding-left: 16px;
+  }
